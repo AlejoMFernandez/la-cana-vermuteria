@@ -1,0 +1,1322 @@
+{
+ "id": "la-cana-vermuteria",
+ "nombre": "La Caña Vermutería",
+ "pais": "AR",
+ "idioma": "es",
+ "modo": "demo",
+ "whatsapp": "5491167247783",
+ "marca": {
+  "colores": {
+   "fondo": "#EFE6D2",
+   "superficie": "#F6F0E3",
+   "texto": "#1C1D1A",
+   "primario": "#A63B26",
+   "acento": "#D6A84E",
+   "borde": "#8A8577"
+  },
+  "fuentes": {
+   "titulos": "Anton",
+   "texto": "Archivo"
+  },
+  "googleFonts": "",
+  "estilo": {
+   "forma": "pildora",
+   "sombra": "suave"
+  },
+  "logo": "img/logo-oscuro.svg",
+  "logoPanel": "img/logo-tiza.svg"
+ },
+ "modulos": {
+  "carta": true,
+  "carrito": true,
+  "reservas": true,
+  "admin": true
+ },
+ "horarios": {
+  "lun": [],
+  "mar": [
+   [
+    "13:00",
+    "00:00"
+   ]
+  ],
+  "mie": [
+   [
+    "13:00",
+    "00:00"
+   ]
+  ],
+  "jue": [
+   [
+    "13:00",
+    "00:00"
+   ]
+  ],
+  "vie": [
+   [
+    "13:00",
+    "01:00"
+   ]
+  ],
+  "sab": [
+   [
+    "13:00",
+    "01:00"
+   ]
+  ],
+  "dom": [
+   [
+    "13:00",
+    "00:00"
+   ]
+  ]
+ },
+ "reservas": {
+  "intervaloMin": 90,
+  "duracionMin": 90,
+  "capacidad": 24,
+  "maxPersonas": 8,
+  "anticipacionMin": 60,
+  "diasAdelante": 21,
+  "ultimoTurnoMin": 90
+ },
+ "pedidos": {
+  "salidas": [
+   "whatsapp",
+   "mercadopago"
+  ],
+  "tipos": [
+   "retiro"
+  ]
+ },
+ "pagos": {
+  "mercadopago": {
+   "endpoint": "https://kit-demos-amf.vercel.app/api/mp-preference",
+   "modo": "sandbox"
+  }
+ },
+ "carta": {
+  "temporadas": [
+   {
+    "id": "primavera",
+    "nombre": "Primavera"
+   },
+   {
+    "id": "invierno",
+    "nombre": "Invierno"
+   }
+  ],
+  "temporadaActiva": "primavera",
+  "grupos": [
+   {
+    "nombre": "Cocina · primavera",
+    "categorias": [
+     "hora-vermut",
+     "pinchos-mar",
+     "pinchos-tierra",
+     "platitos",
+     "tortilla",
+     "tapeo",
+     "postres"
+    ]
+   },
+   {
+    "nombre": "Cocina · invierno",
+    "categorias": [
+     "inv-entradas",
+     "inv-platitos",
+     "inv-tortillas",
+     "inv-sandwiches",
+     "inv-contundentes",
+     "inv-postres"
+    ]
+   },
+   {
+    "nombre": "Barra",
+    "categorias": [
+     "vermut",
+     "cocteleria",
+     "autor",
+     "sidra-birra",
+     "sin-alcohol"
+    ]
+   }
+  ],
+  "categorias": [
+   {
+    "id": "hora-vermut",
+    "nombre": "Hora del vermut",
+    "temporada": "primavera",
+    "orden": 1
+   },
+   {
+    "id": "pinchos-mar",
+    "nombre": "Pinchos de mar",
+    "temporada": "primavera",
+    "orden": 2
+   },
+   {
+    "id": "pinchos-tierra",
+    "nombre": "Pinchos de tierra",
+    "temporada": "primavera",
+    "orden": 3
+   },
+   {
+    "id": "platitos",
+    "nombre": "Platitos",
+    "temporada": "primavera",
+    "orden": 4
+   },
+   {
+    "id": "tortilla",
+    "nombre": "La tortilla",
+    "temporada": "primavera",
+    "orden": 5
+   },
+   {
+    "id": "tapeo",
+    "nombre": "Tapeo para compartir",
+    "temporada": "primavera",
+    "orden": 6
+   },
+   {
+    "id": "postres",
+    "nombre": "Postres",
+    "temporada": "primavera",
+    "orden": 7
+   },
+   {
+    "id": "inv-entradas",
+    "nombre": "Entradas",
+    "temporada": "invierno",
+    "orden": 8
+   },
+   {
+    "id": "inv-platitos",
+    "nombre": "Platitos clásicos españoles",
+    "temporada": "invierno",
+    "orden": 9
+   },
+   {
+    "id": "inv-tortillas",
+    "nombre": "Tortillas españolas cremosas",
+    "temporada": "invierno",
+    "orden": 10
+   },
+   {
+    "id": "inv-sandwiches",
+    "nombre": "Sándwiches de temporada",
+    "temporada": "invierno",
+    "orden": 11
+   },
+   {
+    "id": "inv-contundentes",
+    "nombre": "Platos contundentes",
+    "temporada": "invierno",
+    "orden": 12
+   },
+   {
+    "id": "inv-postres",
+    "nombre": "Postres",
+    "temporada": "invierno",
+    "orden": 13
+   },
+   {
+    "id": "vermut",
+    "nombre": "Vermut de grifo",
+    "orden": 14
+   },
+   {
+    "id": "cocteleria",
+    "nombre": "Coctelería",
+    "orden": 15
+   },
+   {
+    "id": "autor",
+    "nombre": "Tragos de autor",
+    "orden": 16
+   },
+   {
+    "id": "sidra-birra",
+    "nombre": "Sidra y birra",
+    "orden": 17
+   },
+   {
+    "id": "sin-alcohol",
+    "nombre": "Naturales y sin alcohol",
+    "orden": 18
+   }
+  ],
+  "productos": [
+   {
+    "id": "papas-bravas",
+    "categoria": "hora-vermut",
+    "nombre": "Papas bravas",
+    "descripcion": "Papas rústicas con salsa brava (morrón, cebolla, ajo, pan frito, pimientos, sal, pimienta, oliva).",
+    "precio": 9900,
+    "etiquetas": [
+     "veggie"
+    ],
+    "disponible": true,
+    "orden": 1
+   },
+   {
+    "id": "boquerones-oliva",
+    "categoria": "hora-vermut",
+    "nombre": "Boquerones en oliva y provenzal",
+    "descripcion": "",
+    "precio": null,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 2
+   },
+   {
+    "id": "gildas",
+    "categoria": "hora-vermut",
+    "nombre": "Gildas surtidas x4",
+    "descripcion": "Brochetitas de aceitunas, anchoas, boquerones, queso y ají en vinagre.",
+    "precio": null,
+    "etiquetas": [],
+    "foto": "img/carta/gildas.webp",
+    "disponible": true,
+    "orden": 3
+   },
+   {
+    "id": "crudo-aceitunas",
+    "categoria": "hora-vermut",
+    "nombre": "Jamón crudo y aceitunas",
+    "descripcion": "Clásico frío con textura cremosa y frescura de morrón y aceituna verde.",
+    "precio": null,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 4
+   },
+   {
+    "id": "gambas",
+    "categoria": "hora-vermut",
+    "nombre": "Gambas al ajillo",
+    "descripcion": "Salteadas al instante con ajo, oliva y perejil.",
+    "precio": 18000,
+    "etiquetas": [],
+    "foto": "img/carta/gambas.webp",
+    "disponible": true,
+    "orden": 5
+   },
+   {
+    "id": "rabas",
+    "categoria": "hora-vermut",
+    "nombre": "Platito de rabas con alioli",
+    "descripcion": "",
+    "precio": 18000,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 6
+   },
+   {
+    "id": "pincho-salmon",
+    "categoria": "pinchos-mar",
+    "nombre": "Pincho de salmón ahumado",
+    "descripcion": "Con crema de centolla, ralladura de naranja, falso caviar y caramelo de sidra. Se pide de a un pincho.",
+    "precio": 8000,
+    "etiquetas": [],
+    "foto": "img/carta/pincho-salmon.webp",
+    "disponible": true,
+    "orden": 1
+   },
+   {
+    "id": "pincho-langostino",
+    "categoria": "pinchos-mar",
+    "nombre": "Pincho de langostino",
+    "descripcion": "Con crema de centolla, alfalfa, falso caviar y alioli. Se pide de a un pincho.",
+    "precio": null,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 2
+   },
+   {
+    "id": "pincho-boqueron",
+    "categoria": "pinchos-mar",
+    "nombre": "Pincho de boquerón",
+    "descripcion": "En aceite, con crema de centolla, pesto, falso caviar y ralladura de naranja. Se pide de a un pincho.",
+    "precio": 8000,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 3
+   },
+   {
+    "id": "pincho-atun",
+    "categoria": "pinchos-mar",
+    "nombre": "Pincho de atún",
+    "descripcion": "Con chocolate amargo, lactonesa de ajo y cilantro, decorado con falso caviar de gin tonic. Se pide de a un pincho.",
+    "precio": null,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 4
+   },
+   {
+    "id": "pincho-crudo",
+    "categoria": "pinchos-tierra",
+    "nombre": "Pincho de jamón crudo y pera",
+    "descripcion": "Con stracciatella, jarabe de sidra, ralladura de naranja y menta. Se pide de a un pincho.",
+    "precio": 7000,
+    "etiquetas": [],
+    "foto": "img/carta/pincho-crudo.webp",
+    "disponible": true,
+    "orden": 1
+   },
+   {
+    "id": "pincho-provoleta",
+    "categoria": "pinchos-tierra",
+    "nombre": "Pincho de provoleta",
+    "descripcion": "Con stracciatella, gel de tomates y cilantro. Se pide de a un pincho.",
+    "precio": null,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 2
+   },
+   {
+    "id": "pincho-remolacha",
+    "categoria": "pinchos-tierra",
+    "nombre": "Pincho de remolacha",
+    "descripcion": "Con tomate cherry, alioli y menta. Se pide de a un pincho.",
+    "precio": null,
+    "etiquetas": [
+     "veggie"
+    ],
+    "disponible": true,
+    "orden": 3
+   },
+   {
+    "id": "pincho-portobello",
+    "categoria": "pinchos-tierra",
+    "nombre": "Pincho de portobello",
+    "descripcion": "Con babaganush, bocconcino y caramelo de sidra. Se pide de a un pincho.",
+    "precio": 7000,
+    "etiquetas": [
+     "veggie"
+    ],
+    "disponible": true,
+    "orden": 4
+   },
+   {
+    "id": "bunuelos-acelga",
+    "categoria": "platitos",
+    "nombre": "Buñuelos de acelga (4 u.)",
+    "descripcion": "Harina, leche, soda, huevos, acelga, espinaca, levadura, sal y pimienta.",
+    "precio": null,
+    "etiquetas": [
+     "veggie"
+    ],
+    "disponible": true,
+    "orden": 1
+   },
+   {
+    "id": "croq-jamon",
+    "categoria": "platitos",
+    "nombre": "Croquetas de jamón crudo (5 u.)",
+    "descripcion": "Cremosas, con puerros, verdeo y ajo en una base de bechamel, rebozadas y doradas.",
+    "precio": 12000,
+    "etiquetas": [],
+    "foto": "img/carta/croquetas.webp",
+    "disponible": true,
+    "orden": 2
+   },
+   {
+    "id": "croq-hongos",
+    "categoria": "platitos",
+    "nombre": "Croquetas de hongos",
+    "descripcion": "Con puerros y cebolla, realzadas con un toque de aceite de trufa: crujientes por fuera y suaves por dentro.",
+    "precio": 12000,
+    "etiquetas": [
+     "veggie"
+    ],
+    "disponible": true,
+    "orden": 3
+   },
+   {
+    "id": "croq-asado",
+    "categoria": "platitos",
+    "nombre": "Croquetas de asado (5 u.)",
+    "descripcion": "Bechamel, cebollas asadas, verdeo y carne estofada, sobre salsa de remolacha y frutos rojos.",
+    "precio": null,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 4
+   },
+   {
+    "id": "croq-red-velvet",
+    "categoria": "platitos",
+    "nombre": "Croquetas Red Velvet (5 u.)",
+    "descripcion": "De chorizo colorado, cebolla morada asada y verdeo, con bechamel infusionada en su sofrito con pimentón español.",
+    "precio": null,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 5
+   },
+   {
+    "id": "emp-gallegas",
+    "categoria": "platitos",
+    "nombre": "Empanadas gallegas fritas x2",
+    "descripcion": "Merluza, caballa, atún, jurel, morrón, cebolla, ajo, puerro y verdeo.",
+    "precio": null,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 6
+   },
+   {
+    "id": "emp-hongos",
+    "categoria": "platitos",
+    "nombre": "Empanadas de hongos fritas x2",
+    "descripcion": "Manteca, hongos, morrón, cebolla, ajo, puerro y verdeo.",
+    "precio": 8000,
+    "etiquetas": [
+     "veggie"
+    ],
+    "disponible": true,
+    "orden": 7
+   },
+   {
+    "id": "emp-carne",
+    "categoria": "platitos",
+    "nombre": "Empanadas de carne anticuchadas x2",
+    "descripcion": "Estofada con jengibre, ajo y ají panka, con ensalada criolla, maíz frito y lima fresca.",
+    "precio": null,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 8
+   },
+   {
+    "id": "emp-chorizo",
+    "categoria": "platitos",
+    "nombre": "Empanadas de chorizo colorado y provolone x2",
+    "descripcion": "Con cebolla morada y verdeo, alioli de pimentón, criolla y lima fresca.",
+    "precio": null,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 9
+   },
+   {
+    "id": "provo-baharat",
+    "categoria": "platitos",
+    "nombre": "Provoleta macerada en baharat",
+    "descripcion": "Con tomates asados, cebolla colorada, jamón crudo y rúcula fresca.",
+    "precio": null,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 10
+   },
+   {
+    "id": "provo-frita",
+    "categoria": "platitos",
+    "nombre": "Provoleta frita",
+    "descripcion": "Dos opciones: jamón crudo, cherrys asados, cilantro y oliva · o hongos, cherrys asados, aceto y menta.",
+    "precio": null,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 11
+   },
+   {
+    "id": "tortilla-simple",
+    "categoria": "tortilla",
+    "nombre": "Tortilla simple",
+    "descripcion": "Patata y cebolla.",
+    "precio": 9000,
+    "etiquetas": [
+     "veggie"
+    ],
+    "disponible": true,
+    "orden": 1
+   },
+   {
+    "id": "tortilla-chorizo",
+    "categoria": "tortilla",
+    "nombre": "Tortilla española con chorizo colorado",
+    "descripcion": "",
+    "precio": 11000,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 2
+   },
+   {
+    "id": "tortilla-crudo",
+    "categoria": "tortilla",
+    "nombre": "Tortilla completa · crudo y alioli",
+    "descripcion": "",
+    "precio": 12000,
+    "etiquetas": [],
+    "foto": "img/carta/tortilla-crudo.webp",
+    "disponible": true,
+    "orden": 3
+   },
+   {
+    "id": "tortilla-hongos",
+    "categoria": "tortilla",
+    "nombre": "Tortilla completa · hongos",
+    "descripcion": "",
+    "precio": 12000,
+    "etiquetas": [
+     "veggie"
+    ],
+    "foto": "img/carta/tortilla-hongos.webp",
+    "disponible": true,
+    "orden": 4
+   },
+   {
+    "id": "tortilla-boquerones",
+    "categoria": "tortilla",
+    "nombre": "Tortilla completa · boquerones",
+    "descripcion": "",
+    "precio": 12000,
+    "etiquetas": [],
+    "foto": "img/carta/tortilla-boquerones.webp",
+    "disponible": true,
+    "orden": 5
+   },
+   {
+    "id": "tapeo-picar",
+    "categoria": "tapeo",
+    "nombre": "Tapeo · Picar",
+    "descripcion": "Papas bravas, platito de gildas, 4 pinchos (2 de mar y 2 de tierra) y croquetas a elección.",
+    "precio": null,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 1
+   },
+   {
+    "id": "tapeo-tradicional",
+    "categoria": "tapeo",
+    "nombre": "Tapeo · Tradicional",
+    "descripcion": "Papas bravas, 2 porciones de croquetas (3 de jamón crudo y 3 de hongos), 3 empanadas (2 gallegas y 1 de carne), provo frita a elección, 2 pinchos de tierra y 2 de mar.",
+    "precio": null,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 2
+   },
+   {
+    "id": "tapeo-mar",
+    "categoria": "tapeo",
+    "nombre": "Tapeo · De mar",
+    "descripcion": "Platito de boquerones, platito de rabas, 2 porciones de croquetas (asado y hongos), 3 empanadas (2 gallegas y 1 de hongos) y 3 pinchos de mar.",
+    "precio": null,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 3
+   },
+   {
+    "id": "tapeo-criollo",
+    "categoria": "tapeo",
+    "nombre": "Tapeo · Criollo",
+    "descripcion": "Buñuelos, 3 empanadas (2 de chorizo y 1 de carne), 2 porciones de croquetas (Red Velvet y hongos), provoleta al sartén y 4 pinchos de tierra.",
+    "precio": null,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 4
+   },
+   {
+    "id": "triolet",
+    "categoria": "tapeo",
+    "nombre": "Triolet vermutero",
+    "descripcion": "Aceitunas, queso marinado y boquerones + botellín de 500 cc a elección: sangría artesanal, tinto de verano o vermut rosso.",
+    "precio": null,
+    "etiquetas": [],
+    "foto": "img/carta/triolet.webp",
+    "disponible": true,
+    "orden": 5
+   },
+   {
+    "id": "flan",
+    "categoria": "postres",
+    "nombre": "Flan al caramelo",
+    "descripcion": "",
+    "precio": 8000,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 1
+   },
+   {
+    "id": "crema-catalana",
+    "categoria": "postres",
+    "nombre": "Crema catalana",
+    "descripcion": "",
+    "precio": 12000,
+    "etiquetas": [],
+    "foto": "img/carta/crema-catalana.webp",
+    "disponible": true,
+    "orden": 2
+   },
+   {
+    "id": "inv-ent-1",
+    "categoria": "inv-entradas",
+    "nombre": "Empanadas fritas de carne XL (2 u.)",
+    "descripcion": "Con salsa de tomate picante y limón.",
+    "precio": 8000,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 1
+   },
+   {
+    "id": "inv-ent-2",
+    "categoria": "inv-entradas",
+    "nombre": "Empanadas fritas de pollo XL (2 u.)",
+    "descripcion": "Jugosas, con lactonesa cítrica y cilantro.",
+    "precio": 8000,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 2
+   },
+   {
+    "id": "inv-ent-3",
+    "categoria": "inv-entradas",
+    "nombre": "Empanadas fritas de hongos de pino XL (2 u.)",
+    "descripcion": "Con lactonesa de cilantro y rúcula.",
+    "precio": 8000,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 3
+   },
+   {
+    "id": "inv-ent-4",
+    "categoria": "inv-entradas",
+    "nombre": "Buñuelos de espinaca rellenos de provolone (4 u.)",
+    "descripcion": "Con mayonesa de ajo.",
+    "precio": 10400,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 4
+   },
+   {
+    "id": "inv-ent-5",
+    "categoria": "inv-entradas",
+    "nombre": "Provoletitas fritas (5 u.)",
+    "descripcion": "Con lactonesa de ajo y salsa de tomate.",
+    "precio": 12600,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 5
+   },
+   {
+    "id": "inv-ent-6",
+    "categoria": "inv-entradas",
+    "nombre": "Papas más bravas que tu ex",
+    "descripcion": "Con su salsita picante casera.",
+    "precio": 9900,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 6
+   },
+   {
+    "id": "inv-pla-1",
+    "categoria": "inv-platitos",
+    "nombre": "Croquetas cremosas de jamón de estancia (5 u.)",
+    "descripcion": "",
+    "precio": 12000,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 1
+   },
+   {
+    "id": "inv-pla-2",
+    "categoria": "inv-platitos",
+    "nombre": "Croquetas cremosas de hongos de pino (5 u.)",
+    "descripcion": "",
+    "precio": 12000,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 2
+   },
+   {
+    "id": "inv-pla-3",
+    "categoria": "inv-platitos",
+    "nombre": "Rabas clásicas españolas",
+    "descripcion": "Con lactonesa de ajo y limoncito.",
+    "precio": 18000,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 3
+   },
+   {
+    "id": "inv-pla-4",
+    "categoria": "inv-platitos",
+    "nombre": "Mis gambas al ajillo en su salsa",
+    "descripcion": "",
+    "precio": 18000,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 4
+   },
+   {
+    "id": "inv-pla-5",
+    "categoria": "inv-platitos",
+    "nombre": "Pincho de salmón",
+    "descripcion": "Pan tostado vasco, salmón y crema de kanikama.",
+    "precio": 8000,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 5
+   },
+   {
+    "id": "inv-pla-6",
+    "categoria": "inv-platitos",
+    "nombre": "Pincho de boquerón y anchoa",
+    "descripcion": "Pan tostado vasco, sobre provolone.",
+    "precio": 8000,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 6
+   },
+   {
+    "id": "inv-pla-7",
+    "categoria": "inv-platitos",
+    "nombre": "Pincho de jamón crudo",
+    "descripcion": "Pan tostado vasco, crema de ricota y pera.",
+    "precio": 7000,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 7
+   },
+   {
+    "id": "inv-pla-8",
+    "categoria": "inv-platitos",
+    "nombre": "Pincho de portobellos",
+    "descripcion": "Pan tostado vasco, crema de ricota y cilantro.",
+    "precio": 7000,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 8
+   },
+   {
+    "id": "inv-tor-1",
+    "categoria": "inv-tortillas",
+    "nombre": "Tortilla simple",
+    "descripcion": "De patata y cebolla.",
+    "precio": 9000,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 1
+   },
+   {
+    "id": "inv-tor-2",
+    "categoria": "inv-tortillas",
+    "nombre": "Tortilla con jamón crudo",
+    "descripcion": "Lactonesa de ajo y jamón crudo de estancia.",
+    "precio": 12000,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 2
+   },
+   {
+    "id": "inv-tor-3",
+    "categoria": "inv-tortillas",
+    "nombre": "Tortilla con portobellos",
+    "descripcion": "Lactonesa de rúcula y hongos salteados.",
+    "precio": 12000,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 3
+   },
+   {
+    "id": "inv-tor-4",
+    "categoria": "inv-tortillas",
+    "nombre": "Tortilla con boquerones",
+    "descripcion": "Lactonesa de cilantro, boquerones y anchoas.",
+    "precio": 12000,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 4
+   },
+   {
+    "id": "inv-tor-5",
+    "categoria": "inv-tortillas",
+    "nombre": "Tortilla con chorizo",
+    "descripcion": "Crema de chorizo y cantimpalo salteado.",
+    "precio": 11000,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 5
+   },
+   {
+    "id": "inv-san-1",
+    "categoria": "inv-sandwiches",
+    "nombre": "Sándwich de rabas",
+    "descripcion": "Con crema de kanikama, lactonesa cítrica y cilantro, en pan de tinta de calamar. Con papas rústicas.",
+    "precio": 16500,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 1
+   },
+   {
+    "id": "inv-san-2",
+    "categoria": "inv-sandwiches",
+    "nombre": "Sándwich de hongos de pino",
+    "descripcion": "Salteados con morrón y cebolla colorada, verdes y crema de ricota en pan de calabaza. Con papas rústicas.",
+    "precio": 16500,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 2
+   },
+   {
+    "id": "inv-san-3",
+    "categoria": "inv-sandwiches",
+    "nombre": "Sándwich de proteína del día",
+    "descripcion": "Pollo o vacuna apanada con provolone gratinado, verdes, pickles y lactonesa de ajo en pan pretzel. Con papas rústicas.",
+    "precio": 16500,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 3
+   },
+   {
+    "id": "inv-con-1",
+    "categoria": "inv-contundentes",
+    "nombre": "Provoleta rellena",
+    "descripcion": "Con hongos o jamón crudo, sale con ensalada del día.",
+    "precio": 18000,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 1
+   },
+   {
+    "id": "inv-con-2",
+    "categoria": "inv-contundentes",
+    "nombre": "Cachopo español",
+    "descripcion": "Milanesa de nalga rellena de provolone y jamón serrano, con pimientos asados y papas rústicas.",
+    "precio": 32000,
+    "etiquetas": [],
+    "foto": "img/carta/cachopo.webp",
+    "disponible": true,
+    "orden": 2
+   },
+   {
+    "id": "inv-con-3",
+    "categoria": "inv-contundentes",
+    "nombre": "Unas tapitas para picar entre dos",
+    "descripcion": "Tortilla, croquetas, provoletitas, bruschetta de salmón y de crudo. De regalo: botellín de rosso de la casa con su soda.",
+    "precio": 55000,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 3
+   },
+   {
+    "id": "inv-pos-1",
+    "categoria": "inv-postres",
+    "nombre": "Torta vasca casera",
+    "descripcion": "Con caramelo de vermut rosso y crocante.",
+    "precio": null,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 1
+   },
+   {
+    "id": "inv-pos-2",
+    "categoria": "inv-postres",
+    "nombre": "La mejor crema catalana",
+    "descripcion": "De limón y canela.",
+    "precio": 12000,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 2
+   },
+   {
+    "id": "inv-pos-3",
+    "categoria": "inv-postres",
+    "nombre": "Flan con dulce de leche",
+    "descripcion": "",
+    "precio": 8000,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 3
+   },
+   {
+    "id": "botellin",
+    "categoria": "vermut",
+    "nombre": "Botellín de 500 cc",
+    "descripcion": "Rosso de elaboración propia. Consultá por tinto de verano o sangría.",
+    "precio": 16500,
+    "etiquetas": [
+     "casa"
+    ],
+    "foto": "img/carta/vermu-servido.webp",
+    "disponible": true,
+    "orden": 1
+   },
+   {
+    "id": "vaso-largo",
+    "categoria": "vermut",
+    "nombre": "Vaso largo",
+    "descripcion": "Rosso de grifo, sin soda.",
+    "precio": 8500,
+    "etiquetas": [
+     "casa"
+    ],
+    "disponible": true,
+    "orden": 2
+   },
+   {
+    "id": "vaso-soda",
+    "categoria": "vermut",
+    "nombre": "Vaso largo con soda",
+    "descripcion": "El clásico 70/30.",
+    "precio": 8000,
+    "etiquetas": [
+     "casa"
+    ],
+    "foto": "img/carta/vermu-pomelo.webp",
+    "disponible": true,
+    "orden": 3
+   },
+   {
+    "id": "botella-soda",
+    "categoria": "vermut",
+    "nombre": "Botella de 750 cc + 1 soda",
+    "descripcion": "Rosso La Caña para la mesa.",
+    "precio": 28000,
+    "etiquetas": [
+     "casa"
+    ],
+    "foto": "img/carta/botellas.webp",
+    "disponible": true,
+    "orden": 4
+   },
+   {
+    "id": "negroni",
+    "categoria": "cocteleria",
+    "nombre": "Negroni",
+    "descripcion": "Gin, vermut rosso, Campari.",
+    "precio": 9200,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 1
+   },
+   {
+    "id": "sbagliato",
+    "categoria": "cocteleria",
+    "nombre": "Negroni Sbagliato",
+    "descripcion": "Vermut rosso, Campari, espumante.",
+    "precio": 10500,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 2
+   },
+   {
+    "id": "boulevardier",
+    "categoria": "cocteleria",
+    "nombre": "Negroni Boulevardier",
+    "descripcion": "Whisky, vermut rosso, Campari.",
+    "precio": 10500,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 3
+   },
+   {
+    "id": "garibaldi",
+    "categoria": "cocteleria",
+    "nombre": "Garibaldi",
+    "descripcion": "Campari, jugo de naranja.",
+    "precio": 9200,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 4
+   },
+   {
+    "id": "americano",
+    "categoria": "cocteleria",
+    "nombre": "Americano",
+    "descripcion": "Vermut rosso, Campari, soda.",
+    "precio": 9200,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 5
+   },
+   {
+    "id": "vermu-pomelo",
+    "categoria": "cocteleria",
+    "nombre": "Vermú con pomelo",
+    "descripcion": "Vermú bianco, Campari y jugo de pomelo.",
+    "precio": 10500,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 6
+   },
+   {
+    "id": "cynar-julep",
+    "categoria": "cocteleria",
+    "nombre": "Cynar Julep",
+    "descripcion": "Cynar, almíbar, jugo de limón, jugo de pomelo, menta.",
+    "precio": 9200,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 7
+   },
+   {
+    "id": "tinto-verano",
+    "categoria": "cocteleria",
+    "nombre": "Tinto de verano",
+    "descripcion": "Vermut rosso, vino tinto, gaseosa de limón.",
+    "precio": 9000,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 8
+   },
+   {
+    "id": "sangria",
+    "categoria": "cocteleria",
+    "nombre": "Sangría",
+    "descripcion": "Vino tinto, fruta de estación y gaseosa de naranja.",
+    "precio": 8500,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 9
+   },
+   {
+    "id": "fernet",
+    "categoria": "cocteleria",
+    "nombre": "Fernet",
+    "descripcion": "Branca y Coca.",
+    "precio": 9200,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 10
+   },
+   {
+    "id": "pisco-sour",
+    "categoria": "cocteleria",
+    "nombre": "Pisco Sour",
+    "descripcion": "Pisco, jugo de limón, almíbar, clara de huevo.",
+    "precio": null,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 11
+   },
+   {
+    "id": "gin-tonic",
+    "categoria": "cocteleria",
+    "nombre": "Gin tonic",
+    "descripcion": "Gin, tónica.",
+    "precio": 9200,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 12
+   },
+   {
+    "id": "aperol",
+    "categoria": "cocteleria",
+    "nombre": "Aperol Spritz",
+    "descripcion": "Aperol, prosecco y soda.",
+    "precio": 9200,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 13
+   },
+   {
+    "id": "basil-smash",
+    "categoria": "cocteleria",
+    "nombre": "Gin Basil Smash",
+    "descripcion": "Gin London Dry, jugo de limón, almíbar simple, hojas de albahaca.",
+    "precio": 10500,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 14
+   },
+   {
+    "id": "south-side",
+    "categoria": "cocteleria",
+    "nombre": "South Side",
+    "descripcion": "Gin London Dry, jugo de limón, almíbar, hojas de menta.",
+    "precio": 10500,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 15
+   },
+   {
+    "id": "bronx",
+    "categoria": "cocteleria",
+    "nombre": "Bronx",
+    "descripcion": "Gin, vermut rosso, vermut extra dry, jugo de naranja.",
+    "precio": 10500,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 16
+   },
+   {
+    "id": "tom-collins",
+    "categoria": "cocteleria",
+    "nombre": "Tom Collins",
+    "descripcion": "Gin, jugo de limón, almíbar simple, soda o agua sin gas.",
+    "precio": 10500,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 17
+   },
+   {
+    "id": "hanky-panky",
+    "categoria": "cocteleria",
+    "nombre": "Hanky Panky",
+    "descripcion": "Gin London Dry, vermut rosso, Fernet Branca.",
+    "precio": 10500,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 18
+   },
+   {
+    "id": "dirty-martini",
+    "categoria": "cocteleria",
+    "nombre": "Dirty Martini",
+    "descripcion": "Vodka, vermut extra dry, aceituna.",
+    "precio": null,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 19
+   },
+   {
+    "id": "rosaditonic",
+    "categoria": "autor",
+    "nombre": "Rosaditonic",
+    "descripcion": "Gin macerado con hibiscus y pieles de naranja tostadas, con tónica y limón deshidratado. En copa balloon.",
+    "precio": 12000,
+    "etiquetas": [
+     "casa"
+    ],
+    "disponible": true,
+    "orden": 1
+   },
+   {
+    "id": "cagnamomo",
+    "categoria": "autor",
+    "nombre": "Cagnamomo",
+    "descripcion": "Vermut bianco “La Caña” con albahaca, almíbar de limón y tintura de cardamomo. En vaso corto.",
+    "precio": null,
+    "etiquetas": [
+     "casa"
+    ],
+    "disponible": true,
+    "orden": 2
+   },
+   {
+    "id": "del-valle",
+    "categoria": "autor",
+    "nombre": "Del Valle",
+    "descripcion": "Vermut rosso “La Caña”, menta, almíbar de azúcar negra con canela y dátiles, y un golpe de soda.",
+    "precio": 12000,
+    "etiquetas": [
+     "casa"
+    ],
+    "disponible": true,
+    "orden": 3
+   },
+   {
+    "id": "julia-echarren",
+    "categoria": "sidra-birra",
+    "nombre": "Sidra Julia & Echarren · botella",
+    "descripcion": "Endulzada con jugo concentrado de manzana y levemente gasificada.",
+    "precio": 18000,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 1
+   },
+   {
+    "id": "txapela",
+    "categoria": "sidra-birra",
+    "nombre": "Sidra Txapela · botella",
+    "descripcion": "Sin agregado de azúcar ni gas, estilo vasca.",
+    "precio": 18000,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 2
+   },
+   {
+    "id": "filidoro",
+    "categoria": "sidra-birra",
+    "nombre": "Birra artesanal Filidoro",
+    "descripcion": "Paternal, Buenos Aires. Consultá los sabores disponibles.",
+    "precio": null,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 3
+   },
+   {
+    "id": "limonada-l",
+    "categoria": "sin-alcohol",
+    "nombre": "Limonada · litro",
+    "descripcion": "",
+    "precio": 15000,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 1
+   },
+   {
+    "id": "limonada-v",
+    "categoria": "sin-alcohol",
+    "nombre": "Limonada · vaso",
+    "descripcion": "",
+    "precio": 5670,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 2
+   },
+   {
+    "id": "pomelada-l",
+    "categoria": "sin-alcohol",
+    "nombre": "Pomelada · litro",
+    "descripcion": "",
+    "precio": 15000,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 3
+   },
+   {
+    "id": "pomelada-v",
+    "categoria": "sin-alcohol",
+    "nombre": "Pomelada · vaso",
+    "descripcion": "",
+    "precio": 5670,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 4
+   },
+   {
+    "id": "soda",
+    "categoria": "sin-alcohol",
+    "nombre": "Soda (línea Panizza)",
+    "descripcion": "",
+    "precio": 3500,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 5
+   },
+   {
+    "id": "agua",
+    "categoria": "sin-alcohol",
+    "nombre": "Agua con y sin gas",
+    "descripcion": "",
+    "precio": 4200,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 6
+   },
+   {
+    "id": "gaseosa",
+    "categoria": "sin-alcohol",
+    "nombre": "Gaseosa (línea Coca-Cola)",
+    "descripcion": "",
+    "precio": 5500,
+    "etiquetas": [],
+    "disponible": true,
+    "orden": 7
+   }
+  ]
+ },
+ "textos": {
+  "reservarMesa": "Guardame una mesa",
+  "confirmarReserva": "Guardame la mesa",
+  "reservaLista": "¡Mesa pedida!",
+  "reservaListaSub": "{personas} · {dia} a las {hora}. El lugar ya quedó apartado: te confirmamos por WhatsApp.",
+  "sinLugar": "Ese turno se llenó recién, probá el siguiente.",
+  "tuPedido": "Para llevar",
+  "verPedido": "Para llevar",
+  "agregar": "Sumar",
+  "agregado": "Sumado",
+  "carritoVacio": "Todavía no sumaste nada.",
+  "carritoVacioSub": "Elegí algo de la carta y aparece acá.",
+  "retiro": "Retiro en Marcos Sastre 3301",
+  "comentario": "Comentario (cumple, mesa en la vereda…)"
+ }
+}

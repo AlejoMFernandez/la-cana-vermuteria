@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>La Caña Vermutería · Vermú propio, tapas y reservas en Villa del Parque</title>
+<meta name="description" content="Vermutería de esquina en Villa del Parque: vermú Rosso de elaboración propia, pinchos, tortillas, platitos y coctelería de autor. Mirá la carta y reservá tu mesa online. Marcos Sastre 3301, CABA.">
+<meta name="theme-color" content="#efe6d2">
+<link rel="canonical" href="https://la-cana-vermuteria.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://la-cana-vermuteria.vercel.app/">
+<meta property="og:title" content="La Caña Vermutería · la esquina del vermú">
+<meta property="og:description" content="Vermú propio, pinchos, tortillas y coctelería de autor en Villa del Parque. Carta de temporada y reservas online.">
+<meta property="og:image" content="https://la-cana-vermuteria.vercel.app/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="es_AR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://la-cana-vermuteria.vercel.app/img/og.jpg">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/anton.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="fonts/archivo.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="img/hero-vermu-800.webp" as="image" type="image/webp" media="(max-width: 899px)">
+<link rel="preload" href="img/hero-vermu-1200.webp" as="image" type="image/webp" media="(min-width: 900px)">
+<script>
+  // intro: solo con JS y sin movimiento reducido (sin parpadeo: se decide antes de pintar)
+  (function () { var d = document.documentElement; d.classList.add('js');
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('con-intro'); })();
+</script>
+<link rel="stylesheet" href="kit/kit.css?v=3">
+<link rel="stylesheet" href="css/style.css?v=3">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BarOrPub","name":"La Caña Vermutería","servesCuisine":["Española","Tapas"],"address":{"@type":"PostalAddress","streetAddress":"Marcos Sastre 3301","addressLocality":"Villa del Parque, CABA","addressCountry":"AR"},"telephone":"+54 9 11 6724-7783","url":"https://la-cana-vermuteria.vercel.app/","image":"https://la-cana-vermuteria.vercel.app/img/og.jpg","openingHours":["Tu-Th 13:00-24:00","Fr-Sa 13:00-01:00","Su 13:00-24:00"],"sameAs":["https://www.instagram.com/lacaniavermuteria/"],"acceptsReservations":"True"}
+</script>
+</head>
+<body>
+
+<!-- ============ INTRO: la etiqueta se dibuja ============ -->
+<div class="intro" aria-hidden="true">
+  <div class="intro__in">
+    <svg class="intro__esquina" viewBox="0 0 320 200" fill="none">
+      <g class="trazo" stroke="#e0775a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <path pathLength="1" d="M8 188h304"/>
+        <path pathLength="1" d="M34 188V70h164v118"/>
+        <path pathLength="1" d="M24 70l18-20h148l18 20"/>
+        <path pathLength="1" d="M52 188v-74h50v74M118 114h62v44h-62z"/>
+        <path pathLength="1" d="M56 92h138"/>
+        <path pathLength="1" d="M258 188V62M258 104l-22-28M258 92l20-26M258 124l26-16M246 86l-16-6M268 74l10-18"/>
+        <path pathLength="1" d="M120 186l14-22 14 22M128 175h12"/>
+      </g>
+      <path class="cable" d="M24 46q46 22 92 0t92 0" stroke="#6b6a60" stroke-width="1.2"/>
+      <g class="luces">
+        <circle cx="38" cy="53" r="4.5"/><circle cx="70" cy="57" r="4.5"/><circle cx="104" cy="49" r="4.5"/>
+        <circle cx="136" cy="51" r="4.5"/><circle cx="168" cy="56" r="4.5"/><circle cx="198" cy="48" r="4.5"/>
+      </g>
+    </svg>
+    <div class="intro__cartel">
+      <span class="intro__l1"><span>LA CAÑA</span></span>
+      <span class="intro__l2"><i class="flag flag--it"></i><span>VERMUTERIA</span><i class="flag flag--es"></i></span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ BARRA ============ -->
+<header class="barra" data-barra>
+  <a class="barra__logo" href="#inicio" aria-label="La Caña Vermutería, inicio"><img src="img/logo-oscuro.svg" alt="La Caña Vermutería" width="393" height="196"></a>
+  <nav class="barra__nav" aria-label="Secciones">
+    <a href="#carta">Carta</a>
+    <a href="#vermu">Nuestro vermú</a>
+    <a href="#reservar">Reservas</a>
+    <a href="#llevar">Para llevar</a>
+    <a href="#lugar">El lugar</a>
+    <a href="#donde">Dónde estamos</a>
+  </nav>
+  <div class="barra__acc">
+    <a class="btn btn--rosso btn--chico" href="#reservar" data-reservar>Reservar<span class="solo-desk">&nbsp;mesa</span></a>
+    <button class="barra__menu" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu" data-menu-abrir>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="menu" id="menu" hidden data-menu>
+  <div class="menu__top">
+    <img src="img/logo-tiza.svg" alt="" width="393" height="196">
+    <button type="button" class="menu__x" aria-label="Cerrar menú" data-menu-cerrar><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  </div>
+  <nav class="menu__links" aria-label="Secciones">
+    <a href="#carta" style="--d:0">Carta</a>
+    <a href="#vermu" style="--d:1">Nuestro vermú</a>
+    <a href="#reservar" style="--d:2">Reservas</a>
+    <a href="#llevar" style="--d:3">Para llevar</a>
+    <a href="#lugar" style="--d:4">El lugar</a>
+    <a href="#donde" style="--d:5">Dónde estamos</a>
+  </nav>
+  <p class="menu__pie">Marcos Sastre 3301 · Villa del Parque<br><span data-estado-txt>Martes a domingo desde las 13</span></p>
+</div>
+
+<main id="inicio">
+
+<!-- ============ HERO B: el vaso ============ -->
+<section class="hero" aria-labelledby="hero-t">
+  <div class="hero__txt">
+    <p class="hero__kicker tiza"><span class="mask"><span>Villa del Parque · Marcos Sastre 3301</span></span></p>
+    <h1 id="hero-t" class="hero__t">
+      <span class="mask"><span>El vermú de la</span></span>
+      <span class="mask"><span>esquina,</span></span>
+      <span class="mask"><span>hecho acá</span></span>
+    </h1>
+    <p class="hero__lead aparece" style="--d:4">Nuestro Rosso de elaboración propia, pinchos, tortillas, platitos y coctelería de autor. Hace 8 años en el barrio.</p>
+    <div class="hero__ctas aparece" style="--d:5">
+      <a class="btn btn--rosso btn--grande" href="#reservar" data-reservar>Guardame una mesa</a>
+      <a class="btn btn--linea btn--grande" href="#carta">Ver la carta</a>
+    </div>
+    <p class="hero__estado aparece" style="--d:6"><span class="punto" data-estado-punto></span><span data-estado-txt>Martes a domingo desde las 13</span></p>
+  </div>
+  <div class="hero__fotos">
+    <figure class="etiqueta-marco hero__principal descubre">
+      <picture>
+        <source media="(min-width: 900px)" srcset="img/hero-vermu-1200.webp">
+        <img src="img/hero-vermu-800.webp" alt="Sirviendo el vermú Rosso de la casa en un vaso con hielo y pomelo" width="800" height="1000" fetchpriority="high" decoding="async">
+      </picture>
+    </figure>
+    <figure class="hero__chica hero__chica--a descubre" style="--d:2"><img src="img/botellas.webp" alt="Dos botellas de La Caña Vermú Rosso con su etiqueta dibujada" width="900" height="1125" decoding="async"></figure>
+    <figure class="hero__chica hero__chica--b descubre" style="--d:3"><img src="img/croquetas-wide.webp" alt="Croquetas cremosas sobre pizarra" width="900" height="720" decoding="async"></figure>
+    <span class="sello" aria-hidden="true">Rosso de la casa</span>
+  </div>
+</section>
+
+<div class="guirnalda" aria-hidden="true" data-guirnalda></div>
+
+<!-- ============ WOW A: el reloj del vermú ============ -->
+<section class="reloj seccion seccion--pizarra" id="hora" aria-labelledby="reloj-t" data-reloj>
+  <div class="contenedor reloj__grid">
+    <figure class="reloj__foto descubre">
+      <img data-reloj-img src="img/momento-noche.webp" alt="" width="1100" height="786" loading="lazy" decoding="async">
+      <figcaption class="reloj__hora" data-reloj-hora>—</figcaption>
+    </figure>
+    <div class="reloj__txt">
+      <p class="tiza tiza--coral entra">la hora del vermú</p>
+      <h2 id="reloj-t" class="titulo entra" data-reloj-t>La esquina prendida</h2>
+      <p class="reloj__p entra" data-reloj-p>Guirnalda encendida, pinchos y coctelería de autor.</p>
+      <div class="reloj__cuenta entra" data-reloj-cuenta hidden></div>
+      <div class="reloj__franjas entra" role="tablist" aria-label="Momentos del día">
+        <button type="button" role="tab" data-momento="mediodia"><b>13 a 18</b><span>Mediodía</span></button>
+        <button type="button" role="tab" data-momento="2x1"><b>18 a 21</b><span>2x1</span></button>
+        <button type="button" role="tab" data-momento="noche"><b>21 al cierre</b><span>Noche</span></button>
+      </div>
+      <div class="reloj__acc entra">
+        <a class="btn btn--rosso" href="#reservar" data-reloj-cta>Reservá tu mesa</a>
+        <span class="reloj__nota" data-reloj-nota>Lo que ves cambia con la hora real del local.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NUESTRO VERMÚ: etiquetas que giran + sifón 70/30 ============ -->
+<section class="vermu seccion" id="vermu" aria-labelledby="vermu-t">
+  <div class="contenedor vermu__grid">
+    <div class="vermu__intro">
+      <p class="tiza tiza--rosso entra">de grifo, elaborado acá</p>
+      <h2 id="vermu-t" class="titulo entra">Nuestro vermú</h2>
+      <p class="entra">El Rosso La Caña se hace en casa y sale del grifo. Lo servimos como en el barrio: vaso largo, hielo, pomelo y soda de sifón, 70/30.</p>
+      <ul class="formatos entra" data-formatos>
+        <li><span>Botellín de 500 cc</span><b>$ 16.500</b><span class="formatos__qty" data-kit-qty="botellin"></span></li>
+        <li><span>Vaso largo</span><b>$ 8.500</b></li>
+        <li><span>Vaso largo con soda</span><b>$ 8.000</b></li>
+        <li><span>Botella de 750 cc + soda</span><b>$ 28.000</b><span class="formatos__qty" data-kit-qty="botella-soda"></span></li>
+      </ul>
+      <p class="vermu__nota entra">El botellín y la botella también se llevan.</p>
+    </div>
+
+    <div class="etiquetas" data-etiquetas aria-label="Nuestros vermús">
+      <article class="etq" data-etq tabindex="0" role="button" aria-pressed="false" aria-label="Rosso La Caña: tocá para ver cómo lo servimos">
+        <div class="etq__in">
+          <div class="etq__cara etq__frente">
+            <img src="img/etiqueta.webp" alt="" width="430" height="430" loading="lazy" decoding="async">
+            <span class="etq__marca">La Caña vermú</span>
+            <span class="etq__tipo">Rosso</span>
+            <span class="etq__girar">Tocá para dar vuelta ↻</span>
+          </div>
+          <div class="etq__cara etq__dorso">
+            <span class="etq__tipo">Rosso</span>
+            <p>Nuestro vermú de grifo, elaborado artesanalmente. El de todos los días.</p>
+            <ul><li>Con soda 70/30 y pomelo</li><li>Vaso largo, botellín o botella</li><li>Base del Americano, el Negroni y el Del Valle</li></ul>
+          </div>
+        </div>
+      </article>
+      <article class="etq etq--bianco" data-etq tabindex="0" role="button" aria-pressed="false" aria-label="Bianco La Caña: tocá para ver dónde lo usamos">
+        <div class="etq__in">
+          <div class="etq__cara etq__frente">
+            <svg class="etq__dibujo" viewBox="0 0 160 120" fill="none" aria-hidden="true"><g stroke="#8a6d2c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 112h148"/><path d="M18 112V44h90v68"/><path d="M12 44l10-12h82l10 12"/><path d="M30 112V70h28v42M68 70h30v24H68z"/><path d="M134 112V36M134 62l-12-16M134 54l11-14M134 76l14-9"/></g></svg>
+            <span class="etq__marca">La Caña vermú</span>
+            <span class="etq__tipo">Bianco</span>
+            <span class="etq__girar">Tocá para dar vuelta ↻</span>
+          </div>
+          <div class="etq__cara etq__dorso">
+            <span class="etq__tipo">Bianco</span>
+            <p>Nuestro vermú blanco, el de los tragos más frescos.</p>
+            <ul><li>Vermú con pomelo: Bianco, Campari y jugo de pomelo</li><li>Cagnamomo: con albahaca, almíbar de limón y cardamomo</li></ul>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="sifon" data-sifon>
+      <p class="sifon__t">Servilo vos: <b>70/30</b></p>
+      <div class="sifon__escena">
+        <button type="button" class="sifon__btn" data-sifon-btn aria-label="Mantené apretado el sifón para servir la soda">
+          <svg viewBox="0 0 90 210" aria-hidden="true">
+            <g class="sifon__cuerpo">
+              <rect x="20" y="70" width="50" height="134" rx="10" fill="#d9e6e3" fill-opacity=".35" stroke="#efe6d2" stroke-width="2.5"/>
+              <path d="M20 96h50M20 120h50M20 144h50M20 168h50M33 70v134M45 70v134M57 70v134" stroke="#c8372d" stroke-width="1.6" opacity=".85"/>
+              <path d="M30 70V48h30v22" fill="#2a3024" stroke="#efe6d2" stroke-width="2.5"/>
+              <path d="M58 52h24l-6 12h-8" fill="none" stroke="#efe6d2" stroke-width="2.5" stroke-linejoin="round"/>
+              <path class="sifon__palanca" d="M36 46c4-18 18-30 34-32" fill="none" stroke="#efe6d2" stroke-width="5" stroke-linecap="round"/>
+            </g>
+          </svg>
+        </button>
+        <div class="sifon__vaso" data-sifon-vaso aria-hidden="true">
+          <div class="sifon__vermu"></div>
+          <div class="sifon__soda" data-sifon-soda></div>
+          <div class="sifon__chorro" data-sifon-chorro></div>
+          <span class="sifon__marca"></span>
+          <span class="sifon__pomelo"></span>
+        </div>
+      </div>
+      <p class="sifon__msg" aria-live="polite" data-sifon-msg>Mantené apretado el sifón para la soda.</p>
+      <div class="sifon__acc">
+        <button type="button" class="btn btn--linea btn--chico" data-sifon-reset>Otro vaso</button>
+        <a class="btn btn--rosso btn--chico" href="#reservar" data-reservar data-sifon-cta hidden>Vení a probarlo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="guirnalda" aria-hidden="true" data-guirnalda></div>
+
+<!-- ============ CARTA (kit) ============ -->
+<section class="carta seccion seccion--frente" id="carta" aria-labelledby="carta-t">
+  <div class="contenedor">
+    <div class="carta__head">
+      <div>
+        <p class="tiza tiza--coral entra">vermú, tapeo y cocina española</p>
+        <h2 id="carta-t" class="titulo entra">La carta <span class="carta__temp" data-temp-nombre>de primavera</span></h2>
+      </div>
+      <ul class="carta__info entra">
+        <li><b>10% off</b> pagando en efectivo</li>
+        <li><b>Cubierto:</b> focaccia de masa madre y dip del día</li>
+        <li><span class="hoja" aria-hidden="true"></span> sin carne</li>
+      </ul>
+    </div>
+
+    <div class="pizarra entra">
+      <div class="carta__nav" data-carta-nav>
+        <div class="seg" role="group" aria-label="Cocina o barra">
+          <button type="button" data-grupo="cocina" aria-pressed="true">Cocina</button>
+          <button type="button" data-grupo="barra" aria-pressed="false">Barra</button>
+        </div>
+        <div class="carta__secs" data-secs role="tablist" aria-label="Secciones de la carta"></div>
+      </div>
+      <div class="carta__cuerpo">
+        <div class="carta__head-sec" data-sec-head aria-live="polite"></div>
+        <div data-kit="carta" class="carta__kit"></div>
+        <div class="carta__pasos" data-pasos>
+          <button type="button" class="btn btn--linea-tiza btn--chico" data-paso="-1">←</button>
+          <button type="button" class="btn btn--tiza btn--chico" data-paso="1">→</button>
+        </div>
+      </div>
+      <figure class="carta__foto" data-carta-foto aria-hidden="true">
+        <img src="img/carta/croquetas.webp" alt="" width="640" height="640" data-carta-foto-img>
+        <figcaption data-carta-foto-txt>Pasá el mouse por los platos con punto verde.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WOW C: pizarrón de turnos (reservas del kit) ============ -->
+<section class="reservas seccion seccion--pizarra" id="reservar" aria-labelledby="reservar-t">
+  <div class="contenedor">
+    <div class="reservas__head">
+      <div>
+        <p class="tiza tiza--coral entra">sin esperar respuesta</p>
+        <h2 id="reservar-t" class="titulo entra">Reservá por turno</h2>
+      </div>
+      <p class="entra reservas__lead">Elegí el día, cuántos son y el turno. La mesa es por 90 minutos y los lugares libres se ven en el pizarrón.</p>
+    </div>
+    <div class="turnos entra" data-turnos>
+      <div class="turnos__ctrl">
+        <div class="turnos__dias" data-dias role="radiogroup" aria-label="Día"></div>
+        <div class="turnos__pers">
+          <span id="tp-l">Somos</span>
+          <div class="stepper" role="group" aria-labelledby="tp-l">
+            <button type="button" data-pers="-1" aria-label="Una persona menos">−</button>
+            <output data-pers-n>2</output>
+            <button type="button" data-pers="1" aria-label="Una persona más">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="turnos__pizarron" data-pizarron aria-live="polite">
+        <p class="turnos__cargando">Anotando los turnos…</p>
+      </div>
+      <p class="turnos__pie">¿Son más de 8 o es un evento? <a href="https://wa.me/5491167247783?text=Hola%20La%20Ca%C3%B1a!%20Quiero%20consultar%20por%20una%20mesa%20grande" target="_blank" rel="noopener">Escribinos por WhatsApp</a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PARA LLEVAR ============ -->
+<section class="llevar seccion" id="llevar" aria-labelledby="llevar-t">
+  <div class="contenedor llevar__grid">
+    <figure class="llevar__foto descubre"><img src="img/para-llevar.webp" alt="Botellas de vermú La Caña, potes y fiambres envasados para llevar" width="1000" height="800" loading="lazy" decoding="async"></figure>
+    <div class="llevar__txt">
+      <p class="tiza tiza--rosso entra">retiro en el local</p>
+      <h2 id="llevar-t" class="titulo entra">Llevate la vermutada</h2>
+      <p class="entra">Armá el pedido acá, lo mandás por WhatsApp (o lo pagás con Mercado Pago) y pasás a buscarlo por Marcos Sastre 3301.</p>
+      <ul class="llevar__lista entra" data-llevar></ul>
+      <p class="llevar__nota entra">Todo lo que tiene precio en la carta de cocina también se puede sumar.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EL LUGAR ============ -->
+<section class="lugar seccion seccion--tiza2" id="lugar" aria-labelledby="lugar-t">
+  <div class="contenedor">
+    <div class="lugar__head">
+      <h2 id="lugar-t" class="titulo entra">La esquina</h2>
+      <p class="entra">Mesas en la vereda, la barra de azulejos, pizarrones escritos a mano y la guirnalda prendida cuando cae el sol.</p>
+    </div>
+  </div>
+  <div class="galeria" data-galeria>
+    <div class="galeria__pista" data-pista>
+      <figure class="g g--alta descubre"><img src="img/g/esquina-noche-600.webp" srcset="img/g/esquina-noche-600.webp 600w, img/g/esquina-noche-1000.webp 922w" sizes="(min-width: 900px) 30vw, 78vw" alt="La esquina de noche con mesas en la vereda y un saxofonista" width="922" height="1152" loading="lazy" decoding="async"></figure>
+      <figure class="g g--ancha descubre" style="--d:1"><img src="img/g/barra-600.webp" srcset="img/g/barra-600.webp 600w, img/g/barra-1000.webp 1000w" sizes="(min-width: 900px) 40vw, 78vw" alt="La barra con pizarrones de vermut de grifo y frascos" width="1000" height="800" loading="lazy" decoding="async"></figure>
+      <figure class="g descubre" style="--d:2"><img src="img/g/gildas-mesa-600.webp" srcset="img/g/gildas-mesa-600.webp 600w, img/g/gildas-mesa-1000.webp 1000w" sizes="(min-width: 900px) 24vw, 78vw" alt="Gildas sobre plato de peltre" width="1000" height="1000" loading="lazy" decoding="async"></figure>
+      <figure class="g g--alta descubre" style="--d:1"><img src="img/g/salon-600.webp" srcset="img/g/salon-600.webp 600w, img/g/salon-1000.webp 864w" sizes="(min-width: 900px) 24vw, 78vw" alt="El salón con banquetas altas y el vinilo dorado La Caña casa de tapas" width="864" height="1080" loading="lazy" decoding="async"></figure>
+      <figure class="g g--ancha descubre" style="--d:2"><img src="img/g/tabla-pinchos-600.webp" srcset="img/g/tabla-pinchos-600.webp 600w, img/g/tabla-pinchos-1000.webp 1000w" sizes="(min-width: 900px) 40vw, 78vw" alt="Tabla de pinchos sobre pan tostado" width="1000" height="625" loading="lazy" decoding="async"></figure>
+      <figure class="g descubre" style="--d:3"><img src="img/g/vermu-naranja-600.webp" srcset="img/g/vermu-naranja-600.webp 600w, img/g/vermu-naranja-1000.webp 1000w" sizes="(min-width: 900px) 24vw, 78vw" alt="Vermú con naranja en vaso tallado" width="1000" height="1000" loading="lazy" decoding="async"></figure>
+      <figure class="g g--alta descubre" style="--d:1"><img src="img/g/pizarron-600.webp" srcset="img/g/pizarron-600.webp 600w, img/g/pizarron-1000.webp 1000w" sizes="(min-width: 900px) 24vw, 78vw" alt="Pizarrón de vermut en la vereda" width="1000" height="1250" loading="lazy" decoding="async"></figure>
+      <figure class="g g--ancha descubre" style="--d:2"><img src="img/g/equipo-600.webp" srcset="img/g/equipo-600.webp 600w, img/g/equipo-1000.webp 1000w" sizes="(min-width: 900px) 40vw, 78vw" alt="El equipo de La Caña frente a la vermutería" width="1000" height="800" loading="lazy" decoding="async"></figure>
+      <figure class="g g--alta descubre" style="--d:3"><img src="img/g/tapeo-600.webp" srcset="img/g/tapeo-600.webp 600w, img/g/tapeo-1000.webp 1000w" sizes="(min-width: 900px) 24vw, 78vw" alt="Tapeo con pinchos y croquetas" width="1000" height="1250" loading="lazy" decoding="async"></figure>
+    </div>
+    <div class="galeria__flechas">
+      <button type="button" class="flecha" data-gal="-1" aria-label="Fotos anteriores">←</button>
+      <button type="button" class="flecha" data-gal="1" aria-label="Más fotos">→</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REGALÁ / GRUPOS ============ -->
+<section class="extras seccion" aria-label="Regalos y grupos">
+  <div class="contenedor extras__grid">
+    <div class="extra entra">
+      <p class="tiza tiza--rosso">para regalar</p>
+      <h3>Estamos en BigBox</h3>
+      <p>Regalá una salida a La Caña con las experiencias de BigBox.</p>
+    </div>
+    <div class="extra extra--osc entra" style="--d:1">
+      <p class="tiza tiza--coral">cumples y grupos</p>
+      <h3>¿Vienen muchos?</h3>
+      <p>Para mesas de más de 8 o eventos, escribinos y lo armamos.</p>
+      <a class="btn btn--tiza btn--chico" href="https://wa.me/5491167247783?text=Hola%20La%20Ca%C3%B1a!%20Quiero%20consultar%20por%20un%20evento" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DÓNDE ============ -->
+<section class="donde seccion seccion--pizarra" id="donde" aria-labelledby="donde-t">
+  <div class="contenedor donde__grid">
+    <div class="donde__txt">
+      <h2 id="donde-t" class="titulo entra">Dónde estamos</h2>
+      <p class="donde__dir entra">Marcos Sastre 3301, esquina<br>Villa del Parque, CABA</p>
+      <div class="donde__acc entra">
+        <a class="btn btn--tiza" href="https://www.google.com/maps/search/?api=1&amp;query=La+Ca%C3%B1a+Vermuter%C3%ADa+Marcos+Sastre+3301+CABA" target="_blank" rel="noopener">Cómo llegar</a>
+        <a class="btn btn--linea-tiza" href="https://wa.me/5491167247783" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <table class="horario entra" data-horario>
+        <caption class="sr">Horarios</caption>
+        <tbody>
+          <tr data-dia="2"><th scope="row">Martes</th><td>13 a 00</td></tr>
+          <tr data-dia="3"><th scope="row">Miércoles</th><td>13 a 00</td></tr>
+          <tr data-dia="4"><th scope="row">Jueves</th><td>13 a 00</td></tr>
+          <tr data-dia="5"><th scope="row">Viernes</th><td>13 a 01</td></tr>
+          <tr data-dia="6"><th scope="row">Sábado</th><td>13 a 01</td></tr>
+          <tr data-dia="0"><th scope="row">Domingo</th><td>13 a 00</td></tr>
+          <tr data-dia="1"><th scope="row">Lunes</th><td>Cerrado</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="donde__mapa descubre">
+      <iframe title="Mapa: La Caña Vermutería, Marcos Sastre 3301" src="https://www.google.com/maps?q=Marcos+Sastre+3301,+Villa+del+Parque,+CABA&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="pie">
+  <div class="contenedor pie__grid">
+    <img class="pie__logo" src="img/logo-tiza.svg" alt="La Caña Vermutería" width="393" height="196" loading="lazy">
+    <p class="pie__frase tiza tiza--coral">Buen vermú, buena compañía y mejor comida.</p>
+    <ul class="pie__links">
+      <li><a href="https://www.instagram.com/lacaniavermuteria/" target="_blank" rel="noopener">Instagram @lacaniavermuteria</a></li>
+      <li><a href="https://wa.me/5491167247783" target="_blank" rel="noopener">WhatsApp 11 6724-7783</a></li>
+      <li>Marcos Sastre 3301, Villa del Parque</li>
+      <li><a class="pie__panel" href="admin/" target="_blank" rel="noopener">Panel del local (demo) →</a></li>
+    </ul>
+  </div>
+  <p class="pie__credito">Sitio desarrollado por <a href="https://alejomfernandez.com.ar" target="_blank" rel="noopener">Alejo Martín Fernández</a></p>
+</footer>
+
+<script type="module" src="js/main.js?v=3"></script>
+</body>
+</html>
