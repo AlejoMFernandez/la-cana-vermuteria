@@ -1,5 +1,5 @@
 // La Caña Vermutería · demo
-import { initKit } from '../kit/kit.js?v=3';
+import { initKit } from '../kit/kit.js?v=18';
 
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));

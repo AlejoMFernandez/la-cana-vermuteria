@@ -13,13 +13,13 @@
   if (!/\/$|\.html$/.test(location.pathname)) location.replace(location.pathname + '/' + location.search + location.hash);
 </script>
 <link rel="stylesheet" href="../css/fuentes.css?v=3">
-<link rel="stylesheet" href="../kit/kit.css?v=3">
-<link rel="stylesheet" href="../kit/admin/admin.css?v=3">
+<link rel="stylesheet" href="../kit/kit.css?v=18">
+<link rel="stylesheet" href="../kit/admin/admin.css?v=18">
 </head>
 <body>
 <div id="kit-admin" class="kit-root kit-admin" aria-busy="true"></div>
 <script type="module">
-  import { initAdmin } from '../kit/admin/admin.js?v=3';
+  import { initAdmin } from '../kit/admin/admin.js?v=18';
   initAdmin({ config: '../cliente.json', sitio: '../' });
 </script>
 </body>
